@@ -4,58 +4,45 @@
 
 <HEAD>
     
-    <link href="https://fonts.googleapis.com/css?family=Rubik+One|Merriweather+Sans:800|Rubik+Mono+One|Ubuntu:700|Yanone+Kaffeesatz:700" rel="stylesheet">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    
     
     <STYLE TYPE="TEXT/CSS">
         
     
-        #PODCAST {BORDER:10PX SOLID #08106E; 
-                 FONT-FAMILY:'Yanone Kaffeesatz', sans-serif;
-                 FONT-SIZE:450%; TEXT-ALIGN:CENTER;
-                 DISPLAY:TABLE-CELL; VERTICAL-ALIGN:MIDDLE;
-                 LINE-HEIGHT:170%;
-                 POSITION:ABSOLUTE; TOP:25%;
-                 LEFT:5%; COLOR: #08106E;
-                 BACKGROUND-IMAGE:URL(pictures/splashfill.jpg);
+        /*#PODCAST 
+                 
                  }
-        #VIDEO   {BORDER:10PX SOLID #08106E; 
-                 FONT-FAMILY:'Yanone Kaffeesatz', sans-serif;
-                 FONT-SIZE:525%; TEXT-ALIGN:CENTER;
-                 DISPLAY:TABLE-CELL; VERTICAL-ALIGN:MIDDLE;
-                 LINE-HEIGHT:145%;
-                 POSITION:ABSOLUTE; TOP:25%;
-                 LEFT:52%; COLOR:#08106E;
-                 BACKGROUND-IMAGE:URL(pictures/splashfill.jpg);
+        #VIDEO   {
+                
                  }
-        #TEXTS   {BORDER:10PX SOLID #08106E; 
-                 FONT-FAMILY: 'Yanone Kaffeesatz', sans-serif;
-                 FONT-SIZE:525%; TEXT-ALIGN:CENTER;
-                 DISPLAY:TABLE-CELL; VERTICAL-ALIGN:MIDDLE;
-                 LINE-HEIGHT:143%;
-                 POSITION:ABSOLUTE; TOP:25%;
-                 LEFT:28.5%; COLOR:#08106E;
-                 BACKGROUND-IMAGE:URL(pictures/splashfill.jpg);
+        #TEXTS   {
+                 
                  }
-        #ENGAGE  {BORDER:10PX SOLID #08106E;
-                 FONT-FAMILY:'Yanone Kaffeesatz', sans-serif;
-                 FONT-SIZE:500%; TEXT-ALIGN:CENTER;
-                 DISPLAY:TABLE-CELL; VERTICAL-ALIGN:MIDDLE;
-                 LINE-HEIGHT:152%;
-                 POSITION:ABSOLUTE; TOP:25%;
-                 LEFT:76%; COLOR:#08106E;
-                 BACKGROUND-IMAGE:URL(pictures/splashfill.jpg);
-                 }
-    BODY,HTML   {BACKGROUND-IMAGE:URL(pictures/redblue.jpg);
-                BACKGROUND-POSITION: CENTER CENTER;
-                BACKGROUND-REPEAT: NO-REPEAT;
-                BACKGROUND-ATTACHMENT: FIXED; 
-                BACKGROUND-COLOR: #000000;
+        #ENGAGE  {
+                
+                 }*/
+    body,html   {
+                background-image:url(pictures/purpblack.jpg);
+                background-position: center center;
+                background-repeat: no-repeat;
+                background-attachment: fixed; 
+                background-color: #000000;
                 -webkit-background-size: cover;
                 -moz-background-size: cover;
                 -o-background-size: cover;
                 background-size: cover;
                 overflow: auto;
                 }   
+
+    #iconRow    {
+                margin-top: 12%; margin-left:8%;
+                margin-right:4%;
+                }
          
      
               
@@ -69,34 +56,54 @@
         <TITLE> ZENITH RADIO SYNDICATE </TITLE>
         
 </HEAD>
-
+<body>
+<div class="container-fluid">
+    <div class="row" id="iconRow">
 
     
-    <A HREF="podcast.html">     
-    <DIV ID="PODCAST" STYLE="WIDTH: 16%; HEIGHT: 18%"> PODCAST
         
-        </DIV></A> 
+        <div class="col-md-3 col-xs-6" ID="PODCAST"> 
+            <a href="podcast2.html"> 
+                <img class="img-responsive" src="pictures/splashfillCpod.jpg">
+            </a>
+        </div> 
 
-  <A HREF="videos.html">
-    <DIV ID="VIDEO" STYLE="WIDTH: 16%; HEIGHT: 18%"> VIDEOS 
-        
-        </DIV></A>
+  
+        <div class="col-md-3 col-xs-6" ID="VIDEO"> 
+            <a href="videos.html"> 
+                <img class="img-responsive" src="pictures/splashfillCvid.jpg">
+            </a>
+        </div>
 
-  <A HREF="texts.html">     
-    <DIV ID="TEXTS" STYLE="WIDTH: 16%; HEIGHT: 18%"> TEXTS
-    
-        </DIV></A>
+      
+        <div class="col-md-3 col-xs-6" ID="TEXTS"> 
+            <a href="texts.html">
+                <img class="img-responsive" src="pictures/splashfillCtext.jpg">
+            </a>
+        </div>
         
-  <A HREF="engage.html">  
-    <DIV ID="ENGAGE" STYLE="WIDTH: 16%; HEIGHT: 18%" > ENGAGE
-    
+   
+        <div class="col-md-3 col-xs-6" ID="ENGAGE">
+            <a href="engage.html">
+                <img class="img-responsive" src="pictures/splashfillCmore.jpg"> 
+            </a>
         
-        </DIV></A>
+        </div>
         
   
 
-  
 
-</BODY>
+        
+</div>
+
+        <script type="text/javascript" src="http://code.jquery.com/jquery-1.8.0.min.js"></script>
+        <!-- the above command adds a chosen jquery library for reference -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+         <!--   the below command calls the chosen script
+                        the library must precede the script -->
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+</body>
 
 </HTML>
