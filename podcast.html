@@ -4,80 +4,119 @@
 
 <HEAD>
     
-    <link href="https://fonts.googleapis.com/css?family=Rubik+One|Merriweather+Sans:800|Rubik+Mono+One|Ubuntu:700|Yanone+Kaffeesatz:700" rel="stylesheet">
-    
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
     <STYLE TYPE="TEXT/CSS">
         
     
-        #HOME    {BORDER:10PX SOLID #AD182A; 
-                 FONT-FAMILY:'Yanone Kaffeesatz', sans-serif;
-                 FONT-SIZE:450%; TEXT-ALIGN:CENTER;
-                 DISPLAY:TABLE-CELL; VERTICAL-ALIGN:MIDDLE;
-                 LINE-HEIGHT:117%;
-                 POSITION:ABSOLUTE; TOP:1.5%;
-                 LEFT:63.3%; COLOR:#08106E;
-                 BACKGROUND-IMAGE:URL(pictures/splashfill.jpg);
-                 }
-        
-    BODY,HTML   {BACKGROUND-IMAGE:URL(pictures/podcast2.jpg);
-                BACKGROUND-POSITION: CENTER CENTER;
-                BACKGROUND-REPEAT: NO-REPEAT;
-                BACKGROUND-ATTACHMENT: FIXED; 
-                BACKGROUND-COLOR: #000000;
+      
+       html, body   
+                {background-image:url(pictures/podpurpbg.png);
+                background-color: #000000;
+                background-repeat: no-repeat;
+                background-postion: center;
                 -webkit-background-size: cover;
                 -moz-background-size: cover;
                 -o-background-size: cover;
                 background-size: cover;
                 overflow: auto;
-                }   
-         
-   #SOUNDCLOUD  {POSITION:ABSOLUTE; TOP:4%;
-                LEFT:3.5%}
-                
-    #YOUTUBE    {BACKGROUND-IMAGE:URL(pictures/youtube.png);
-                POSITION:ABSOLUTE; TOP:27%;
-                LEFT:44.8%}
-    
-              
+                } 
+
+        #pp, #tw, #fb
+                {background-color:#c08ef5;}
+
+        #widgetWell
+                {margin-left:19%; margin-right:20%;
+                margin-top:15%;}
+
+        #youWell
+                {background-image: url(pictures/static2.jpg);
+                margin-bottom:20%;}
+
         </STYLE>
         
         <META CHARSET="UTF-8">
         <META NAME="VIEWPORT" CONTENT="WIDTH=DEVICE-WIDTH, INITIAL-SCALE=1,
-                USER-SCALABLE=YES">
+                USER-SCALABLE=no">
                    
         
         <TITLE> ZRS PODCAST </TITLE>
         
 </HEAD>
+<BODY>
+    <div class="container-fluid">
+
+        
+        <div class="row" id="widgetWell">
+            <div class="col-md-8 col-xs-12">
+                
+                    
+                         <iframe width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/246684540&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
+                    
+                    
+            </div>    
+        
+            <div class="col-md-4 col-xs-12 well" id="youWell">
+                <div id="youtube">
+                    <A HREF="https://www.youtube.com/channel/UCUXp7ucaqnWemOOBrvCgUTw" target="_blank">  
+                    
+                        <img src="pictures/youtube2.png" alt="Smiley face" width="100%" height="100%">
+        
+        
+                    </A>
+                </div>
+            </div>    
+        </div> 
+    </div>
 
 
-    
-    <A HREF="index.html">     
-    <DIV ID="HOME" STYLE="WIDTH: 14%; HEIGHT: 12%"> HOME
-        
-        </DIV></A> 
+    <nav class="navbar navbar-inverse navbar-fixed-bottom">
+        <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="http://zenradsyndicate.com/index.html">ZENITH RADIO SYNDICATE</a>
+            </div>
 
-    <DIV ID="SOUNDCLOUD"> 
-        
-        <iframe width="150%" height="450" scrolling="no" frameborder="no" 
-        src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/246684540&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
-        
-        </DIV>
-        
-   <A HREF="https://www.youtube.com/channel/UCUXp7ucaqnWemOOBrvCgUTw" target="_blank">  
-    <DIV ID="YOUTUBE">
-        <img src="pictures/youtube.png" alt="Smiley face" width="100%" height="100%">
-        
-        
-        </DIV></A>
-    
-        
-       
-        
-  
+    <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="active zrsBtn"><a href="#">PODCAST <span class="sr-only">(current)</span></a></li>
+                    <li class="zrsBtn"><a href="http://zenradsyndicate.com/texts.html">TEXTS</a></li>
+                    <li class="zrsBtn"><a href="http://zenradsyndicate.com/videos.html">VIDEO</a></li>
+                    <li class="zrsBtn"><a href="http://zenradsyndicate.com/engage.html">+ MORE</a></li>
+                </ul>
+                <button type="button" class="btn navbar-btn navbar-right" id="tw"><a href="http://twitter.com"> TWITTER </a></button>
+                <button type="button" class="btn navbar-btn navbar-right" id="pp"><a href="http://paypal.com"> DONATE </a></button>
+      
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </nav>
 
-  
+
+
+
+
+
+
+    </div>
+
+        <script type="text/javascript" src="http://code.jquery.com/jquery-1.8.0.min.js"></script>
+        <!-- the above command adds a chosen jquery library for reference -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+         <!--   the below command calls the chosen script
+                        the library must precede the script -->
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
 </BODY>
-
 </HTML>
