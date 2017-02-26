@@ -13,12 +13,10 @@
     <STYLE TYPE="TEXT/CSS">
         
     
-        #HOME    {
-                 position:absolute; top:1.5%;
-                 left:63.3%;
-                 }
-        
-        HTML   {background-image:url(pictures/podpurpbg.png);
+      
+       html, body   
+                {background-image:url(pictures/podpurpbg.png);
+                background-color: #000000;
                 background-repeat: no-repeat;
                 background-postion: center;
                 -webkit-background-size: cover;
@@ -28,11 +26,22 @@
                 overflow: auto;
                 } 
 
+        #pp, #tw, #fb
+                {background-color:#c08ef5;}
+
+        #widgetWell
+                {margin-left:19%; margin-right:20%;
+                margin-top:15%;}
+
+        #youWell
+                {background-image: url(pictures/static2.jpg);
+                margin-bottom:20%;}
+
         </STYLE>
         
         <META CHARSET="UTF-8">
         <META NAME="VIEWPORT" CONTENT="WIDTH=DEVICE-WIDTH, INITIAL-SCALE=1,
-                USER-SCALABLE=YES">
+                USER-SCALABLE=no">
                    
         
         <TITLE> ZRS PODCAST </TITLE>
@@ -40,15 +49,58 @@
 </HEAD>
 <BODY>
     <div class="container-fluid">
-        <div class="row">
-
-
-
-
-        </div>
-
 
         
+        <div class="row" id="widgetWell">
+            <div class="col-md-8 col-xs-12">
+                
+                    
+                         <iframe width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/246684540&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
+                    
+                    
+            </div>    
+        
+            <div class="col-md-4 col-xs-12 well" id="youWell">
+                <div id="youtube">
+                    <A HREF="https://www.youtube.com/channel/UCUXp7ucaqnWemOOBrvCgUTw" target="_blank">  
+                    
+                        <img src="pictures/youtube2.png" alt="Smiley face" width="100%" height="100%">
+        
+        
+                    </A>
+                </div>
+            </div>    
+        </div> 
+    </div>
+
+
+    <nav class="navbar navbar-inverse navbar-fixed-bottom">
+        <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="http://zenradsyndicate.com/index.html">ZENITH RADIO SYNDICATE</a>
+            </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="active zrsBtn"><a href="#">PODCAST <span class="sr-only">(current)</span></a></li>
+                    <li class="zrsBtn"><a href="http://zenradsyndicate.com/texts.html">TEXTS</a></li>
+                    <li class="zrsBtn"><a href="http://zenradsyndicate.com/videos.html">VIDEO</a></li>
+                    <li class="zrsBtn"><a href="http://zenradsyndicate.com/engage.html">+ MORE</a></li>
+                </ul>
+                <button type="button" class="btn navbar-btn navbar-right" id="tw"><a href="http://twitter.com"> TWITTER </a></button>
+                <button type="button" class="btn navbar-btn navbar-right" id="pp"><a href="http://paypal.com"> DONATE </a></button>
+      
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </nav>
 
 
 
