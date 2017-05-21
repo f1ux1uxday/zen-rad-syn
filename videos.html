@@ -1,72 +1,101 @@
 <!DOCTYPE HTML>
 
-<HTML>
-
-<HEAD>
-    
-    <link href="https://fonts.googleapis.com/css?family=Rubik+One|Merriweather+Sans:800|Rubik+Mono+One|Ubuntu:700|Yanone+Kaffeesatz:700" rel="stylesheet">
-    
-    <STYLE TYPE="TEXT/CSS">
-        
-    
-        #HOME    {BORDER:10PX SOLID #AD182A; 
-                 FONT-FAMILY:'Yanone Kaffeesatz', sans-serif;
-                 FONT-SIZE:450%; TEXT-ALIGN:CENTER;
-                 DISPLAY:TABLE-CELL; VERTICAL-ALIGN:MIDDLE;
-                 LINE-HEIGHT:117%;
-                 POSITION:ABSOLUTE; TOP:1.5%;
-                 LEFT:84.1%; COLOR:#08106E;
-                 BACKGROUND-IMAGE:URL(pictures/splashfill.jpg);
-                 }
-        
-    BODY,HTML   {BACKGROUND-IMAGE:URL(pictures/static.jpg);
-                BACKGROUND-POSITION: CENTER CENTER;
-                BACKGROUND-REPEAT: REPEAT;
-                BACKGROUND-ATTACHMENT: FIXED; 
-                BACKGROUND-COLOR: #000000;
-                -webkit-background-size: cover;
-                -moz-background-size: cover;
-                -o-background-size: cover;
-                background-size: cover;
-                overflow: auto;
-                }   
-    
-      #PLAYER   {POSITION:ABSOLUTE; TOP:5%;
-                LEFT:17%;}
-    
-              
-        </STYLE>
-        
-        <META CHARSET="UTF-8">
-        <META NAME="VIEWPORT" CONTENT="WIDTH=DEVICE-WIDTH, INITIAL-SCALE=1,
-                USER-SCALABLE=YES">
-                   
-        
-        <TITLE> ZRS VIDEO THEATRE </TITLE>
-        
-</HEAD>
+<html>
 
 
-    
-    <A HREF="index.html">     
-    <DIV ID="HOME" STYLE="WIDTH: 14%; HEIGHT: 12%"> HOME
-        
-        </DIV></A> 
+<head>
 
-    
-        
-   
-    <DIV ID="PLAYER">
-        <iframe width="853" height="480" src="https://www.youtube.com/embed/IfaEzOTBUuQ" frameborder="0" allowfullscreen></iframe>
-        
-        </DIV>
-        
-       
-        
-  
+	<!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
-  
+	<style type="text/css">
 
-</BODY>
+	body 		{
+			/*background-image: url(pictures/purpvidbg.jpg);*/
+			background-color: #000000;
+			background-repeat: no-repeat;
+			-webkit-background-size:cover;
+			-moz-background-size:cover;
+			-o-background-size:cover;
+			background-size:cover;
+			overflow:auto;
+		}
 
-</HTML>
+	#youtubeVideo 	{
+			display:flex;
+			justify-content:center;
+			align-self:center;
+			margin-top:5%;
+			margin-right:5%;
+		}
+
+	@media (max-width: 600px) {
+  			#youtubeVideo {
+    		margin-left: 20%;
+
+  		}
+
+	</style>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+	<title>ZENITH VIDEO</title>
+
+</head>
+
+<body>
+	<div class="container-fluid">
+
+		<header id="zBar">
+			<img class="img-responsive" src="pictures/vidbanner.png">
+		</header>
+
+		<div id="youtubeVideo">
+
+			<iframe width="75%" height="400" src="https://www.youtube.com/embed/videoseries?list=PLiRmnZjzoUOIx6R500OaaxDpCNNtsi5Nu" frameborder="0" allowfullscreen>
+	
+			</iframe>
+		</div>
+
+		<nav class="navbar navbar-inverse navbar-fixed-bottom">
+        	<div class="container-fluid">
+    		<!-- Brand and toggle get grouped for better mobile display -->
+            	<div class="navbar-header">
+                	<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                	<span class="sr-only">Toggle navigation</span>
+                	<span class="icon-bar"></span>
+                	<span class="icon-bar"></span>
+                	<span class="icon-bar"></span>
+                	</button>
+                	<a class="navbar-brand" href="http://zenradsyndicate.com/index.html">ZENITH RADIO SYNDICATE</a>
+            	</div>
+
+   			<!-- Collect the nav links, forms, and other content for toggling -->
+            	<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                	<ul class="nav navbar-nav navbar-right">
+                    	<li class="active zrsBtn"><a href="#">VIDEO <span class="sr-only">(current)</span></a></li>
+                    	<li class="zrsBtn"><a href="http://zenradsyndicate.com/podcast.html">PODCAST</a></li>
+                    	<li class="zrsBtn"><a href="http://zenradsyndicate.com/texts.html">TEXT</a></li>
+                    	<li class="zrsBtn"><a href="http://zenradsyndicate.com/more.html">+ MORE</a></li>
+                	</ul>
+                	<button type="button" class="btn navbar-btn navbar-right" id="tw"><a href="http://twitter.com"> TWITTER </a></button>
+                	<button type="button" class="btn navbar-btn navbar-right" id="pp"><a href="http://paypal.com"> DONATE </a></button>
+      
+            	</div><!-- /.navbar-collapse -->
+        	</div><!-- /.container-fluid -->
+    	</nav>
+
+    </div>	
+		
+		<script type="text/javascript" src="http://code.jquery.com/jquery-1.8.0.min.js"></script>
+        <!-- the above command adds a chosen jquery library for reference -->
+    	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+         <!--   the below command calls the chosen script
+            the library must precede the script -->
+    	<!-- Latest compiled and minified JavaScript -->
+    	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+</body>
+
+
+</html>

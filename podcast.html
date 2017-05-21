@@ -15,10 +15,9 @@
     
       
        html, body   
-                {background-image:url(pictures/podpurpbg.png);
+                {/*background-image:url(pictures/podpurpbg.png)*/;
                 background-color: #000000;
                 background-repeat: no-repeat;
-                background-postion: center;
                 -webkit-background-size: cover;
                 -moz-background-size: cover;
                 -o-background-size: cover;
@@ -26,16 +25,24 @@
                 overflow: auto;
                 } 
 
-        #pp, #tw, #fb
-                {background-color:#c08ef5;}
+	#pp, #tw, #fb {
+                background-color:#c08ef5;
+	}
 
-        #widgetWell
-                {margin-left:19%; margin-right:20%;
-                margin-top:15%;}
+	#widgetWell {
+                margin-left:19%; margin-right:20%;
+                margin-top:5%;
+	}
 
-        #youWell
-                {background-image: url(pictures/static2.jpg);
-                margin-bottom:20%;}
+	#youWell{
+                background-image: url(pictures/static2.jpg);
+                margin-bottom:10%;
+	}
+
+	#zBar 	{
+		display:flex;
+		justify-content:stretch;
+	}
 
         </STYLE>
         
@@ -49,6 +56,11 @@
 </HEAD>
 <BODY>
     <div class="container-fluid">
+
+	<header id="zBar">
+		<img class="img-responsive" src="pictures/podbanner.png">
+	</header>
+	
 
         
         <div class="row" id="widgetWell">
@@ -91,9 +103,9 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
                     <li class="active zrsBtn"><a href="#">PODCAST <span class="sr-only">(current)</span></a></li>
-                    <li class="zrsBtn"><a href="http://zenradsyndicate.com/texts.html">TEXTS</a></li>
+                    <li class="zrsBtn"><a href="http://zenradsyndicate.com/texts.html">TEXT</a></li>
                     <li class="zrsBtn"><a href="http://zenradsyndicate.com/videos.html">VIDEO</a></li>
-                    <li class="zrsBtn"><a href="http://zenradsyndicate.com/engage.html">+ MORE</a></li>
+                    <li class="zrsBtn"><a href="http://zenradsyndicate.com/more.html">+ MORE</a></li>
                 </ul>
                 <button type="button" class="btn navbar-btn navbar-right" id="tw"><a href="http://twitter.com"> TWITTER </a></button>
                 <button type="button" class="btn navbar-btn navbar-right" id="pp"><a href="http://paypal.com"> DONATE </a></button>
@@ -113,8 +125,8 @@
         <script type="text/javascript" src="http://code.jquery.com/jquery-1.8.0.min.js"></script>
         <!-- the above command adds a chosen jquery library for reference -->
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-         <!--   the below command calls the chosen script
-                        the library must precede the script -->
+         <!--   the below command calls the chosen script -->
+                    <!--    the library must precede the script -->
         <!-- Latest compiled and minified JavaScript -->
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
