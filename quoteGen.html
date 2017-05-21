@@ -1,0 +1,136 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg320mUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+  	<!-- Optional theme -->
+  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+  	<meta charset="utf-8"> 
+  	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
+  
+  	<style type="text/css">
+    
+    	body {
+      		background-image:url(pictures/purpblack.jpg);
+    	}
+
+    	#quote {
+			    font-family: monospace;
+      		font-weight: bold;
+      		text-align: center;
+			    color: #ffffff;
+			    background-color: #000000;
+    	}
+
+    	#quoteWell {
+      		display: flex;
+      		align-items: center;
+      		justify-content: center;
+      		background-color: #000000;
+      		height: 22em;
+      		width: 75%;
+      		border:solid;
+      		border-width: 1em;
+      		border-color: #000000;
+      		border-radius: 1%
+    	}
+
+    	#quoteBox {
+      		display: flex;
+      		justify-content: center;
+      		align-items:center;
+      		margin-top: 10%;
+			/*margin-left: 15%;
+			margin-right: 15%;*/
+    	}
+
+    	#buttonBox {
+      		display: flex;
+      		justify-content: center;
+      		align-items: center;
+    	}
+
+    	#freshButton, #tweetButton {
+			font-family: monospace;
+      		background-color: #000000;
+      		color: #c08ef5;
+	   	}
+
+		h1 {
+			font-size: 2em;
+		}
+
+		h4 {
+			font-size: 1em;
+		}
+
+		@media (max-width: 600px) {
+			#quote {
+				font-size: 1em;
+			}
+
+			#tweetButton {
+				margin-left: 16%;
+				margin-right: 16%;
+			}
+
+			#freshButton {
+				margin-left: 18%;
+				margin-right: 17.5%;
+			}
+
+			#quoteWell {
+				margin: auto;
+				width: 100%;
+			}
+		}
+
+  	</style>
+
+  	<title>BYTES OF NIETZSCHE</title>
+
+</head>
+
+<body>
+  	<div class="container-fluid">
+
+    	<div id="quoteBox">
+
+      		<div id="quoteWell">
+   
+        		<h1 id="quote">
+          			<em>"BYTES OF NIETZSCHE"</em>
+        		</h1>
+      		</div>
+
+    	</div>
+
+    	<div id="buttonBox">
+
+      		<div id="buttonWrap">
+        		<button id="freshButton" class="text-center">TAKE ANOTHER BYTE</button>
+    
+     			<button id="tweetButton" class="text-center">TWEET THE NIETZSCHE</button>
+      		</div>
+
+    	</div>
+
+  	</div>
+
+  	<script src="jquery-3.2.0.min.js"> </script>
+  	<script src="quoteScript.js"></script>
+      <!--  run jquery first and then randomizer script -->
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+         <!--   the below command calls the chosen script
+            the library must precede the script -->
+      <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
+
+

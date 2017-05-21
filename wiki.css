@@ -1,0 +1,32 @@
+body {
+	font-family: 'Noto Sans', sans-serif;
+	text-align: center;
+	background-color: #111111;
+	color: #dddddd;
+}
+
+#output {
+	display:inline-block;
+	list-style-type: none;
+	width: 75%;
+}
+
+p {
+	background-color: #dddddd;
+	color: #111111;
+	
+}
+
+ a:link, a:visited, a:hover, a:active {
+	color: #dddddd;
+	font-weight: bold;
+}
+
+#controls {
+	justify-content: center space-around;
+	flex-direction: row;
+}
+
+#controls a {
+	text-decoration: none;
+}
